@@ -8,7 +8,7 @@ sudo ./Pos_Install_Ubuntu-20-04.sh
 
 Ao término da execução do script esteja ciente que seu computador será reiniciado!
 
-================================================================================
+============================================================================
 
 Ubuntu 20.04 post installation Shell Script for personal use.
 

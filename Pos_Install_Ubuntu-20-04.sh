@@ -25,11 +25,6 @@ wget https://www.gnome-look.org/p/1214931/startdownload?file_id=1577182106&file_
 ##Instalando os pacotes .deb baixados anteriormente e tema
 ##Installing previously downloaded packages and theme
 sudo dpkg -i *.deb
-mkdir -p $HOME/.themes
-tar -Jxxvf 06-Flat-Remix-GTK-Blue-Dark-Solid_20191224.tar.xz
-cd 06-Flat-Remix-GTK-Blue-Dark-Solid_20191224
-mv 06-Flat-Remix-GTK-Blue-Dark-Solid_20191224 $HOME/.themes
-
 cd
 ##Adicionando repositórios de alguns programas
 ##Adding repositories for some programs
@@ -49,6 +44,7 @@ sudo apt update -y
 ##Installing packages from previous repositories and others
 sudo apt install kdenlive breeze frei0r-plugins -y
 sudo apt install ffmpeg -y
+sudo apt install adb -y
 sudo apt install obs-studio -y
 sudo apt install qbittorrent-stable -y
 sudo apt install lutris -y

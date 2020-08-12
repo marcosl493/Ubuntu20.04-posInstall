@@ -21,7 +21,6 @@ mkdir -p Downloads/TempFiles
 cd Downloads/TempFiles
 wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb  
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-wget https://www.gnome-look.org/p/1214931/startdownload?file_id=1577182106&file_name=06-Flat-Remix-GTK-Blue-Dark-Solid_20191224.tar.xz&file_type=application/x-xz&file_size=477300
 ##Instalando os pacotes .deb baixados anteriormente e tema
 ##Installing previously downloaded packages and theme
 sudo dpkg -i *.deb

@@ -14,11 +14,12 @@ sudo apt upgrade -y
 
 ##Criando Pasta para Arquivos de instalação
 ##Creating folder for installation files
-mkdir -p Downloads/TempFiles
+cd $HOME/Downloads
+mkdir -p TempFiles
 
 ##Indo para a pasta criada e baixando os arquivos
 ##going to the created folder and making file downloads
-cd Downloads/TempFiles
+cd TempFiles
 wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb  
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 ##Instalando os pacotes .deb baixados anteriormente e tema
@@ -66,7 +67,6 @@ sudo apt install libsqlite3-0:i386 -y
 sudo apt install flatpak -y
 sudo apt install build-essential default-jdk libssl-dev exuberant-ctags ncurses-term ack-grep silversearcher-ag fontconfig imagemagick libmagickwand-dev software-properties-common git vim-gtk3 curl -y
 sudo apt install tmux -y
-sudo apt install vim -y
 sudo apt install ubuntu-restricted-extras -y
 sudo apt install audacity -y
 sudo apt install gnome-tweak-tool -y
@@ -78,14 +78,11 @@ sudo apt-get update; \
 
 ##Instalando pacotes snap
 ##Installing snap packages
-sudo snap install code --classic
-sudo snap install wps-office-multilang
 sudo snap install photogimp
+sudo snap install spotify
 ##Adicionando flathub e Instalando pacotes flatpak
 ##Adding flathub and installing flatpak packages
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub com.discordapp.Discord -y
-flatpak install flathub com.spotify.Client -y
 flatpak install flathub org.codeblocks.codeblocks -y
 flatpak install flathub org.eclipse.Java -y
 flatpak install flathub fr.handbrake.ghb -y
@@ -106,7 +103,7 @@ sudo apt autoremove -y
 # ---------------------------------------------------------------------- #
 ##Apagando arquivos de instalação
 ##Deleting installation files
-cd Downloads
+cd $HOME/Downloads
 rmdir TempFiles
 cd
 printf "%s" 'Seu computador será reiniciado em '
